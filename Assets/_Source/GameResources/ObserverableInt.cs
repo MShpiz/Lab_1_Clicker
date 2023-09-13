@@ -1,4 +1,4 @@
-﻿namespace Core
+﻿namespace GameResources
 {
   public class ObservableInt
   {
