@@ -9,13 +9,24 @@ namespace GameResources
     {
         private Dictionary<GameResource, ObservableInt> _resources = new Dictionary<GameResource, ObservableInt>();
 
-        void ChangeResource(GameResource r, int v)
+        public void ChangeResource(GameResource r, int v)
         {
-            _resources[r].Value = v;
+            if (!_resources.ContainsKey(r))
+            {
+                _resources[r] = new ObservableInt(v);
+            }
+            else
+            {
+                _resources[r].Value = v;
+            }
         }
 
-        ObservableInt GetResource(GameResource r)
+        public ObservableInt GetResource(GameResource r)
         {
+            if (!_resources.ContainsKey(r))
+            {
+                _resources[r] = new ObservableInt(0);
+            }
             return _resources[r];
         }
     }
