@@ -12,6 +12,7 @@ namespace GameResources
     {
         public ResourceBank _bank = new ResourceBank();
         [SerializeField]  public TMP_Text simpleText;
+        [SerializeField]  public TMP_Text prodLvlText;
         private void Awake()
         {
             _bank.ChangeResource(GameResource.Humans, 10);

@@ -11,11 +11,11 @@ namespace GameResources
         Wood,
         Stone,
         Gold,
-        HumansProdLvl,
-        FoodProdLvl,
-        WoodProdLvl,
-        StoneProdLvl,
-        GoldProdLvl
+        HumansProdLvl = 1,
+        FoodProdLvl = 1,
+        WoodProdLvl = 1,
+        StoneProdLvl = 1,
+        GoldProdLvl= 1
     }
 }
 
