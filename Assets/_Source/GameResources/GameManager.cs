@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System;
 
 namespace GameResources
 {
@@ -15,6 +17,7 @@ namespace GameResources
             _bank.ChangeResource(GameResource.Humans, 10);
             _bank.ChangeResource(GameResource.Food, 5);
             _bank.ChangeResource(GameResource.Wood, 5);
+
         }
         void Start()
         {
