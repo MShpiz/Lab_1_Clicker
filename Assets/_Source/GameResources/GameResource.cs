@@ -10,7 +10,12 @@ namespace GameResources
         Food,
         Wood,
         Stone,
-        Gold
+        Gold,
+        HumansProdLvl,
+        FoodProdLvl,
+        WoodProdLvl,
+        StoneProdLvl,
+        GoldProdLvl
     }
 }
 
