@@ -6,11 +6,17 @@ namespace GameResources
 {
     public enum GameResource
     {
+        Default,
         Humans,
         Food,
         Wood,
         Stone,
-        Gold
+        Gold,
+        HumansProdLvl,
+        FoodProdLvl,
+        WoodProdLvl,
+        StoneProdLvl,
+        GoldProdLvl
     }
 }
 

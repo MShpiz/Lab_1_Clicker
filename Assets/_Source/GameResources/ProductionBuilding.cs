@@ -8,16 +8,30 @@ namespace GameResources {
     {
         // Start is called before the first frame update
         [SerializeField] public GameResource resource;
-        private uint _productionTime = 10;
+        [SerializeField] public GameResource productionLevelType;
+        [SerializeField] public uint productionTime = 10;
 
         private Button _btn;
         private GameManager _manager;
-        private ResourceProgress _progressBar;
+
+#nullable enable
+        private ResourceProgress? _progressBar = null;
+#nullable disable
+
         void Awake()
         {
             _btn = GameObject.Find(this.name).GetComponent<Button>();
+
+            try
+            {
+                _progressBar = _btn.transform.GetChild(1).GetComponent<ResourceProgress>();
+            }
+            catch (UnityException e)
+            {
+                Debug.LogError($"Progress bar exception: {e.Message}, btn {this.name}");
+                _progressBar = null;
+            }
             
-            _progressBar = _btn.transform.GetChild(1).GetComponent<ResourceProgress>();
             
 
             _manager = GameObject.Find("ResourceVisual").GetComponent<GameManager>();
@@ -48,8 +62,12 @@ namespace GameResources {
 
         private IEnumerator MakeResource()
         {
-            StartCoroutine(_progressBar.StartProgress(_productionTime));
-            yield return new WaitForSeconds(_productionTime);
+            if (_progressBar != null)
+            {
+                StartCoroutine(_progressBar.StartProgress(productionTime * (1 - (float)_manager._bank.GetResource(productionLevelType).Value / 100)));
+            }
+            
+            yield return new WaitForSeconds(productionTime * (1 - (float)_manager._bank.GetResource(productionLevelType).Value / 100));
             _manager._bank.ChangeResource(resource, _manager._bank.GetResource(resource).Value + 1);
             if (!_btn.interactable)
             {
