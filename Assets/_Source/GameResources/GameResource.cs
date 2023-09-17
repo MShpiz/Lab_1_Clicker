@@ -6,6 +6,7 @@ namespace GameResources
 {
     public enum GameResource
     {
+        Default,
         Humans,
         Food,
         Wood,

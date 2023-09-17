@@ -333,7 +333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 2
+  resource: 3
+  productionLevelType: 8
   productionTime: 10
 --- !u!1 &5329541
 GameObject:
@@ -387,7 +388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 9
+  resource: 10
+  productionLevelType: 0
   productionTime: 0
 --- !u!114 &5329544
 MonoBehaviour:
@@ -681,7 +683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 1
+  resource: 2
+  productionLevelType: 7
   productionTime: 10
 --- !u!1 &79595525
 GameObject:
@@ -893,7 +896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 3
+  resource: 4
+  productionLevelType: 9
   productionTime: 10
 --- !u!1 &229398535
 GameObject:
@@ -947,7 +951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 6
+  resource: 7
+  productionLevelType: 0
   productionTime: 0
 --- !u!114 &229398538
 MonoBehaviour:
@@ -1083,7 +1088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 8
+  resource: 9
+  productionLevelType: 0
   productionTime: 0
 --- !u!114 &260651752
 MonoBehaviour:
@@ -1219,7 +1225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 7
+  resource: 8
+  productionLevelType: 0
   productionTime: 0
 --- !u!114 &315559147
 MonoBehaviour:
@@ -2458,7 +2465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 5
+  resource: 6
+  productionLevelType: 0
   productionTime: 0
 --- !u!114 &1096150785
 MonoBehaviour:
@@ -4425,7 +4433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 0
+  resource: 1
+  productionLevelType: 6
   productionTime: 10
 --- !u!1 &1893438414
 GameObject:
@@ -4712,7 +4721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bdf94d30d7d0b4f838ba9c27008ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resource: 4
+  resource: 5
+  productionLevelType: 10
   productionTime: 10
 --- !u!1 &2088976280
 GameObject:

@@ -8,6 +8,7 @@ namespace GameResources {
     {
         // Start is called before the first frame update
         [SerializeField] public GameResource resource;
+        [SerializeField] public GameResource productionLevelType;
         [SerializeField] public uint productionTime = 10;
 
         private Button _btn;
@@ -63,10 +64,10 @@ namespace GameResources {
         {
             if (_progressBar != null)
             {
-                StartCoroutine(_progressBar.StartProgress(productionTime));
+                StartCoroutine(_progressBar.StartProgress(productionTime * (1 - (float)_manager._bank.GetResource(productionLevelType).Value / 100)));
             }
             
-            yield return new WaitForSeconds(productionTime);
+            yield return new WaitForSeconds(productionTime * (1 - (float)_manager._bank.GetResource(productionLevelType).Value / 100));
             _manager._bank.ChangeResource(resource, _manager._bank.GetResource(resource).Value + 1);
             if (!_btn.interactable)
             {
