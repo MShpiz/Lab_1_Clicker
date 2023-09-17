@@ -33,6 +33,12 @@ namespace GameResources
                 $"Wood {_bank.GetResource(GameResource.Wood).Value} " +
                 $"Stone {_bank.GetResource(GameResource.Stone).Value} " +
                 $"Gold {_bank.GetResource(GameResource.Gold).Value}");
+
+            prodLvlText.SetText($"Humans Lvl {_bank.GetResource(GameResource.HumansProdLvl).Value} " +
+                $"Food Lvl {_bank.GetResource(GameResource.FoodProdLvl).Value} " +
+                $"Wood Lvl {_bank.GetResource(GameResource.WoodProdLvl).Value} " +
+                $"Stone Lvl {_bank.GetResource(GameResource.StoneProdLvl).Value} " +
+                $"Gold Lvl {_bank.GetResource(GameResource.GoldProdLvl).Value}");
         }
     }
 }
